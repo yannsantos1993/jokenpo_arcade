@@ -87,13 +87,12 @@ else:
     print("-=" * 40)
     sleep(1)
     jog1 = input("\nPlayer 1: insert name:").strip().upper()
-    jog_CPU = ("CPU")
 
     sleep(1)
     print("-=" * 40)
     print("\nDESAFIANTES:")
     sleep(1)
-    print(f"\nPLAYER 1 | {jog1} vs. {jog_CPU} | PLAYER 2\n")
+    print(f"\nPLAYER 1 | {jog1} vs. CPU | PLAYER 2\n")
     print("-=" * 40)
     sleep(1)
 
@@ -118,18 +117,18 @@ else:
         sleep(2)
 
         if sjog1 == sjog_CPU:
-            print(f"\nEntão... temos um empate {jog1} e {jog_CPU} escolheram {opcoes[sjog1]} ")
-            print(f"\nPlacar geral: {jog1} | {vitorias_jog1} x {vitorias_CPU} | {jog_CPU}\n")
+            print(f"\nEntão... temos um empate {jog1} e CPU escolheram {opcoes[sjog1]} ")
+            print(f"\nPlacar geral: {jog1} | {vitorias_jog1} x {vitorias_CPU} | CPU\n")
             print("-=" * 40)
         elif (sjog1 == "0" and sjog_CPU == "2") or (sjog1 == "1" and sjog_CPU == "0") or (sjog1 == "2" and sjog_CPU == "1"):
             vitorias_jog1 += 1
-            print(f"\n{jog1} escolheu {opcoes[sjog1]} e {jog_CPU} escolheu {opcoes[sjog_CPU]}, logo {jog1} venceu este round!")
-            print(f"\nPlacar geral: {jog1} | {vitorias_jog1} x {vitorias_CPU} | {jog_CPU}\n")
+            print(f"\n{jog1} escolheu {opcoes[sjog1]} e CPU escolheu {opcoes[sjog_CPU]}, logo {jog1} venceu este round!")
+            print(f"\nPlacar geral: {jog1} | {vitorias_jog1} x {vitorias_CPU} | CPU\n")
             print("-=" * 40)
         elif (sjog_CPU == "0" and sjog1 == "2") or (sjog_CPU == "1" and sjog1 == "0") or (sjog_CPU == "2" and sjog1 == "1"):
             vitorias_CPU += 1
-            print(f"\n{jog1} escolheu {opcoes[sjog1]} e {jog_CPU} escolheu {opcoes[sjog_CPU]}, logo {jog_CPU} venceu este round!")
-            print(f"\nPlacar geral: {jog1} | {vitorias_jog1} x {vitorias_CPU} | {jog_CPU}\n")
+            print(f"\n{jog1} escolheu {opcoes[sjog1]} e CPU escolheu {opcoes[sjog_CPU]}, logo CPU venceu este round!")
+            print(f"\nPlacar geral: {jog1} | {vitorias_jog1} x {vitorias_CPU} | CPU\n")
             print("-=" * 40)
 
 if vitorias_jog1 > vitorias_jog2:
@@ -146,5 +145,5 @@ elif vitorias_jog1 > vitorias_CPU:
     print("-=" * 40)
 else:
     sleep(1)
-    print(f"\nParabéns {jog_CPU} você foi o vencedor da melhor de 3!\n")
+    print(f"\nParabéns CPU você foi o vencedor da melhor de 3!\n")
     print("-=" * 40)
