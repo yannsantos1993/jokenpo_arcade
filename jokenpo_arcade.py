@@ -8,14 +8,14 @@ opcoes = {
     "2" : "Tesoura"
     }
 
-opcoes_CPU = ["0", "1", "2"]
+opcoes_CPU = ["0", "1", "2", "1", "2", "0", "2", "0", "1", "0", "1", "2", "1", "2", "0", "2", "0", "1"]
 
 vitorias_jog1 = 0
 vitorias_jog2 = 0
 vitorias_CPU = 0
-CPU = randint(0, 2)
 
 print("-=" * 40)
+sleep(1)
 print("\nBem-vindos ao Jo-Ken-Pô Arcade, jogo composto por uma melhor de 3.\nO primeiro jogador que vencer 2 rounds é o ganhador!\nescolha entre, (0) = PEDRA,  (1) = PAPEL ou (2) = TESOURA e divirta(m)-se!\n")
 print("-=" * 40)
 sleep(1)
@@ -104,7 +104,7 @@ else:
             sjog1 = getpass.getpass(f"\n{jog1}, escolha entre, (0) = PEDRA,  (1) = PAPEL ou (2) = TESOURA: ").strip()
             print("-=" * 40)
             sleep(1)
-        sjog_CPU = (opcoes_CPU[CPU])
+        sjog_CPU = (opcoes_CPU[randint(0, 17)])
 
         sleep(1)
         print("-=" * 40)
